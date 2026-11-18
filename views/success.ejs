@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Successful</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            text-align: center;
+            padding: 50px 15px;
+        }
+
+        .box {
+            max-width: 500px;
+            margin: auto;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        h1 {
+            color: #15803d;
+        }
+
+        .details {
+            text-align: left;
+            background: #f0fdf4;
+            padding: 20px;
+            border-radius: 8px;
+            line-height: 2;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Registration Successful!</h1>
+
+    <p>Your information has passed server-side validation.</p>
+
+    <div class="details">
+
+        <strong>Name:</strong> <%= student.name %><br>
+
+        <strong>Email:</strong> <%= student.email %><br>
+
+        <strong>Mobile:</strong> <%= student.phone %><br>
+
+        <strong>Course:</strong> <%= student.course %>
+
+    </div>
+
+    <a href="/">Register Another Student</a>
+
+</div>
+
+</body>
+</html>
